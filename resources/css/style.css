@@ -1,0 +1,70 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Added this to make divs sizes relative to viewport */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+
+}
+
+/* Content*/
+
+h1 {
+	font-family: "Yrsa", serif;
+	font-style: bold;
+	font-size: 2rem;
+}
+
+
+#content {
+	width: 50%;
+	height: 100%;
+	background: #E8F7E9;
+
+}
+
+/* Background image */
+
+#background {
+	width: 50%;
+	height: 100%;
+	background: #E8F7E9 url(../images/monstera.jpg) no-repeat center;
+	background-size: cover;
+}
+
+/* Mobile */
+
+
+@media only screen and (max-width: 760px) {
+
+/* Removed flex property to make one div go behind the other */
+
+	body {
+		display: block;
+	}
+
+	#content {
+		width: 100%;
+		position: absolute;
+		background: transparent;
+	}
+
+/* Positioned background div below content div and made image lighter with a gradient. */
+
+	#background {
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		background: linear-gradient(to bottom, rgba(240,250,244,0.9) 0%, rgba(240,250,244,0.9) 100%), url(../images/monstera.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
