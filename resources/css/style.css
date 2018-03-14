@@ -35,6 +35,48 @@ h1 {
 	margin: 5.93rem 0 8rem 0;
 }
 
+/* Fields */
+
+.login-input {
+	width: 328px;
+	height: 48px;
+	background-color: #FBCBC1;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+	box-shadow: inset 1px 2px #9C7D76;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+label {
+	position:absolute; 
+	left:-10000px; 
+	top:auto; 
+	width:1px; 
+	height:1px; 
+	overflow:hidden;
+}
+
+#name {
+	margin-bottom: 24px;
+	background: url(../images/icon_user.svg) no-repeat scroll 16px 14px;
+	background-color: #FBCBC1;
+	text-indent: 64px;
+}
+
+#email {
+	margin-bottom: 24px;
+	background: url(../images/icon_mail.svg) no-repeat scroll 18px 14px;
+	background-color: #FBCBC1;
+	text-indent: 64px;
+}
+
+
+/* Button */
+
 .primary-button {
 	margin-top: 8rem;
 	padding: 1.12rem 7rem;
